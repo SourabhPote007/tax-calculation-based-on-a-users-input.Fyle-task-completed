@@ -12,17 +12,17 @@
         <form id="taxForm">
           <div class="form-group">
               <div class="form-group">
-                <label for="income">Enter gross annual income:</label>
-                <input type="number" placeholder="Enter gross annual income" id="income" class="form-control">
+                <label for="income">Enter gross annual income <span class="Questionmark">?</span> </label>
+                <input type="number" required placeholder="Enter gross annual income" id="income" class="form-control">
                 <span class="error-icon" id="incomeError">!</span>
               </div>
               <div class="form-group">
-                <label for="extraIncome">Enter extra income:</label>
-                <input type="number" placeholder=">Enter extra income" id="extraIncome" class="form-control">
+                <label for="extraIncome">Enter extra income <span class="Questionmark">?</span> </label>
+                <input type="number" required placeholder="Enter extra income from other sources" id="extraIncome" class="form-control">
                 <span class="error-icon" id="extraIncomeError">!</span>
               </div>
-            <label for="age">Enter age group :</label>
-            <select id="age" aria-placeholder="Enter age group " class="form-control">
+            <label for="age">Enter age group  <span class="Questionmark">?</span> </label>
+            <select id="age" required aria-placeholder="Enter age group " class="form-control">
               <option value="<40">&lt; 40</option>
               <option value=">=40&<60">&ge; 40 &lt; 60</option>
               <option value=">=60">&ge; 60</option>
@@ -30,8 +30,8 @@
             <span class="error-icon" id="ageError">!</span>
           </div>
           <div class="form-group">
-            <label for="deductions">Enter total applicable deductions:</label>
-            <input type="number" placeholder="Enter total applicable deductions" id="deductions" class="form-control">
+            <label for="deductions">Enter total applicable deductions  <span class="Questionmark">?</span> </label>
+            <input type="number" required placeholder="Enter total applicable deductions" id="deductions" class="form-control">
             <span class="error-icon" id="deductionsError">!</span>
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
@@ -39,11 +39,14 @@
       </div>
     
       <div id="modal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2>Tax Calculation</h2>
+        <span class="close">Close</span>
+        <div class="box">
+          <div class="modal-content">
+          <h2>Your overall income will be</h2>
           <p id="taxResult"></p>
+          <span>after tax deductions</span>
         </div>
+      </div>
       </div>
     <script src="script.js"></script>
 </body>
