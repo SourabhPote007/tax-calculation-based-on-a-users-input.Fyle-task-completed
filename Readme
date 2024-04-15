@@ -1,0 +1,5 @@
+Age: <40
+Gross Annual Income: 1000000
+Extra Income: 50000
+Deductions: 20000
+The overall income would be 1000000 + 50000 - 20000 = 1030000. Since it exceeds 800000, and the age is <40, the tax would be 0.3 * (1030000 - 800000) = 63000 Lakhs. So, the modal will display:
