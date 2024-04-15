@@ -22,13 +22,13 @@ function calculateTax() {
   const overallIncome = income + extraIncome - deductions;
 
   let tax = 0;
-  if (overallIncome > 800000) {
+  if (overallIncome > 100000) {
     if (age === '<40') {
-      tax = 0.3 * (overallIncome - 800000);
+      tax = 0.3 * (overallIncome - 100000);
     } else if (age === '>=40&<60') {
-      tax = 0.4 * (overallIncome - 800000);
+      tax = 0.4 * (overallIncome - 100000);
     } else if (age === '>=60') {
-      tax = 0.1 * (overallIncome - 800000);
+      tax = 0.1 * (overallIncome - 100000);
     }
   }
 
