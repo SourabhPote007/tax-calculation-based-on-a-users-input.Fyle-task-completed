@@ -1,5 +1,9 @@
+it calculates the tax based on the provided inputs and displays the result in the modal. The result is shown in Lakhs with two decimal places. Let's say we have the following inputs:
 Age: <40
 Gross Annual Income: 1000000
 Extra Income: 50000
 Deductions: 20000
 The overall income would be 1000000 + 50000 - 20000 = 1030000. Since it exceeds 800000, and the age is <40, the tax would be 0.3 * (1030000 - 800000) = 63000 Lakhs. So, the modal will display:
+
+The overall income would be 1000000 + 50000 - 20000 = 1030000. Since it exceeds 800000, and the age is <40, the tax would be 0.3 * (1030000 - 800000) = 63000 Lakhs. So, the modal will display:
+I Have Added The Example OF Tax Calculated with screenshot.This is the first task that is given to me i am happy to share that i have completed it with a nice user interface.Thank you for giving me this opportunity.
